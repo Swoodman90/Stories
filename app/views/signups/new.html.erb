@@ -1,0 +1,16 @@
+<!DOCTYPE html>
+<html>
+  <head>
+     <link rel="stylesheet" href="signups.css.scss" />
+  </head>
+  <body>
+    <main>
+      <h2> Join Stories today! </h2>
+      <%= form_for(@signup) do |f| %>
+        <%= f.text_field :firstname, :placeholder => "First Name" %>
+        <%= f.text_field :email, :placeholder => "E-Mail" %>
+        <%= f.submit "Sign-Up" %>
+      <% end %>
+    </main>
+  </body>
+</html>

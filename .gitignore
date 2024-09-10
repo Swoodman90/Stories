@@ -1,0 +1,37 @@
+# Ignore bundler config
+/.bundle
+
+# Ignore the database
+/db/*.sqlite3
+/db/*.sqlite3-journal
+
+# Ignore all log files and temp files
+/log/*
+/tmp/*
+!/log/.keep
+!/tmp/.keep
+
+# Ignore uploaded files in development
+/storage/*
+!/storage/.keep
+
+# Ignore secret files
+/config/master.key
+/config/credentials.yml.enc
+
+# Ignore system files
+*.swp
+*.swo
+.DS_Store
+
+# Ignore node_modules if using Node.js
+/node_modules
+
+# Ignore precompiled assets
+/public/assets
+
+# Ignore coverage reports
+/coverage
+
+# Ignore byebug command history
+.byebug_history

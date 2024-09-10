@@ -14,29 +14,30 @@
   </head>
 
   <body>
-    
-    <div id="menubar">
-    <div id="button">
-      <img src="https://content.codecademy.com/projects/z2d/stories/menu-black.svg?_gl=1*1syd35m*_gcl_au*NDc5MTEzMDYuMTcyMDQ4NzU3NQ..*_ga*ODQ2MzMwOTM2Ni4xNzIwNDg5Mjg2*_ga_3LRZM6TM9L*MTcyNDg1MTg0NS43My4wLjE3MjQ4NTE5MzguNjAuMC4w" alt="Menu">
+    <div class="content">
+      <div id="menubar">
+      <div id="button">
+        <img src="https://content.codecademy.com/projects/z2d/stories/menu-black.svg?_gl=1*1syd35m*_gcl_au*NDc5MTEzMDYuMTcyMDQ4NzU3NQ..*_ga*ODQ2MzMwOTM2Ni4xNzIwNDg5Mjg2*_ga_3LRZM6TM9L*MTcyNDg1MTg0NS43My4wLjE3MjQ4NTE5MzguNjAuMC4w" alt="Menu">
+      </div>
     </div>
-  </div>
 
-  <div id="menu" class="hidden">
-    <ul>
-      <li><%= link_to "Home", root_path %></li>
-      <li><%= link_to "About", about_path %></li>
-      <li><a href="/">Contact</a></li>
-    </ul>
-    <div id="close-button">
-      <img src="https://content.codecademy.com/projects/z2d/stories/close-white.svg?_gl=1*siy8qz*_gcl_au*NTgzMTUzNjI3LjE3MTk4ODE2ODM.*_ga*MTUzNTY4NDc2My4xNjk1ODYxMTQ5*_ga_3LRZM6TM9L*MTcyNDk3NTI1Ny4yMjcuMS4xNzI0OTc2OTExLjU1LjAuMA.." alt="Close">
+    <div id="menu" class="hidden">
+      <ul>
+        <li><%= link_to "Home", root_path %></li>
+        <li><%= link_to "About", about_path %></li>
+        <li><%= link_to "Contact", new_path %></li>
+      </ul>
+      <div id="close-button">
+        <img src="https://content.codecademy.com/projects/z2d/stories/close-white.svg?_gl=1*siy8qz*_gcl_au*NTgzMTUzNjI3LjE3MTk4ODE2ODM.*_ga*MTUzNTY4NDc2My4xNjk1ODYxMTQ5*_ga_3LRZM6TM9L*MTcyNDk3NTI1Ny4yMjcuMS4xNzI0OTc2OTExLjU1LjAuMA.." alt="Close">
+      </div>
     </div>
-  </div>
-    
-    <%= yield %>
+      
+      <%= yield %>
 
-    <%= javascript_include_tag 'application', 'data-turbolinks-track' => true %>
-    
+      <%= javascript_include_tag 'application', 'data-turbolinks-track' => true %>
+      <footer> Designed and built by Shane Woodman </footer>
+    </div>
   </body>
   
-  <footer> Designed and built by Shane Woodman </footer>
+  
 </html>
