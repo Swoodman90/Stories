@@ -1,16 +1,20 @@
 <!DOCTYPE html>
 <html>
-  <head>
-     <link rel="stylesheet" href="signups.css.scss" />
-  </head>
   <body>
-    <main>
-      <h2> Join Stories today! </h2>
-      <%= form_for(@signup) do |f| %>
-        <%= f.text_field :firstname, :placeholder => "First Name" %>
-        <%= f.text_field :email, :placeholder => "E-Mail" %>
-        <%= f.submit "Sign-Up" %>
-      <% end %>
-    </main>
+    <div class="signup-page">
+      <main>
+        <h2> Join Stories today! </h2>
+        <div class="signup-form">
+          <%= form_for(@signup) do |f| %>
+            <%= f.text_field :firstname, :placeholder => "First Name" %>
+            <%= f.text_field :email, :placeholder => "E-Mail" %>
+            <%= f.submit "Sign-Up" %>
+          <% end %>
+        </div>
+        <div class="journal-image">
+          <%= image_tag ("https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRgEMM8uJ_Fot0lq1N6gn9FcfDZpaS_syThdQ&s") %>
+        </div>
+      </main>
+    </div>
   </body>
 </html>

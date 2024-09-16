@@ -13,3 +13,21 @@
  *= require_tree .
  *= require_self
  */
+
+ html, body {
+  height: 100%;
+  margin: 0;
+}
+
+.content {
+  min-height: calc(100vh - 100px); /* Adjust 100px to the height of your footer */
+  padding-bottom: 10px; /* Same value as above */
+}
+
+footer {
+  height: 70px; /* Adjust to your footer's height */
+  position: relative;
+  bottom: 0;
+  width: 100%;
+}
+

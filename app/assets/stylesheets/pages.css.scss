@@ -1,3 +1,4 @@
+
 main {
   font-family: "Josefin Sans", serif;
   font-weight: 300;
@@ -17,7 +18,8 @@ main {
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  text-align: center; 
+  text-align: center;
+  border: 2px solid black;
 }
 
 main h1 {
@@ -57,10 +59,13 @@ main button {
   padding: 60px 100px 60px 100px;
 }
 
+.secondary-image {
+  border: 2px solid black;
+}
 img {
   height: 400px;
   width: 100%;
-  object-fit: cover;
+  object-fit: cover; 
 }
 
 .discover-button {
@@ -89,6 +94,10 @@ html, body {
   box-sizing: border-box;
 }
 
+.thanks-page {
+  padding: 40px 0 60px 0;
+}
+
 footer {
   font-family: "Josefin Sans", serif;
   text-align: center;
@@ -99,17 +108,18 @@ footer {
   bottom: 0;
 }
 
-
-.about-section {
-  background: url("https://plus.unsplash.com/premium_photo-1677359734743-231e33b5c7d3?fm=jpg&q=60&w=3000&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D") no-repeat center center;
+.about-image {
+  display: block;
+  box-sizing: border-box;
   height: 400px;
+  width: 100%;
   background-size: cover;
   background-position: center;
-  padding: 50px 0 0 0;
+  border: 2px solid black;
 }
 
 .about-subsection {
-  padding: 60px 0 60px 0;
+  padding: 40px 0 40px 0;
 }
 
 .about-subsection p {

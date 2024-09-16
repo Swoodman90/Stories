@@ -2,16 +2,16 @@
 <html>
   <body>
     <main>
-      <section class= "about-section">
+      <section class= "about-image">
+        <%= image_tag "https://plus.unsplash.com/premium_photo-1677359734743-231e33b5c7d3?fm=jpg&q=60&w=3000&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" %>
       </section>
     
       <section class= "about-subsection">
       <p>The story is yours.</p>
       <p>Tell it with <span style="font-style: italic;">Stories</span>.</p>
-      <br>
       <h2>Join today!</h2>
       
-      <button><%= link_to "Sign-Up", 'new', class: "no-underline-button" %></button>
+      <button><%= link_to "Sign-Up", new_path, class: "no-underline-button" %></button>
       </section>
       
     </main>
